@@ -4,6 +4,13 @@
 $(document).ready(function() {
 	initializePage();
 })
+	console.log("Name clicked");
+$(".friendname").click(changeText);
+
+function changeText(friendname) {
+	friendname.preventDefault();
+	$(this).text(anagrammedName(name));
+}
 
 /*
  * Function that is called when the document is ready.

@@ -24,13 +24,13 @@
 			All my friends are imaginary.
 		</p>
 		<hr>
-	{{#each friend}}
-      <div class="friends" id="{{id}}">
-        <a href="#" class="picture">
-          <img src="http://lorempixel.com/500/500/people" ... />
-          <p>{{friend}}</p>
-        </a>
+	{{#each friends}}
+      <div class="friends">
+          <img width="500px" height="500px" src="{{imageURL}}"/>
+          <h3><a href="#" class="friendname">{{name}}</a></h3>
+          <p>{{description}}</p>
       </div>
+      <hr>
     {{/each}}
 
 	<form id="addFriendForm" role="form" method="get" action="/add">

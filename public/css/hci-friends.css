@@ -4,9 +4,13 @@
 }
 
 .img-rounded {
+	width: 500px;
+	height: 500px;
 }
 
 .img-responsive {
+	width: 500px;
+	height: 500;
 }
 
 /* applies to anything of class "example-class-selector" */
